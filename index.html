@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuni | 個人主頁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 燕麥色系配色方案 */
+        :root {
+            --bg-color: #f2ede4;       /* 燕麥底色 */
+            --text-color: #4a453e;     /* 深褐灰色文字 */
+            --accent-color: #d8cfc0;   /* 按鈕淺色 */
+            --hover-color: #c5baaa;    /* 滑過時的顏色 */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Noto Serif TC', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        /* 大頭照樣式 */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        /* 連結按鈕樣式 */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-item {
+            display: block;
+            background-color: white;
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 50px; /* 大圓角設計 */
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            border: 1px solid transparent;
+        }
+
+        .link-item:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* 頁尾小字 */
+        footer {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Yuni" class="profile-img">
+
+        <h1>Yuni</h1>
+        <p>剛畢業的資管系學生</p>
+
+        <div class="links">
+            <a href="https://www.instagram.com/你的帳號" class="link-item">Instagram</a>
+            </div>
+
+        <footer>
+            © 2024 Yuni. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
